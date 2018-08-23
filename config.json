@@ -1,0 +1,760 @@
+{
+    "camera": {
+        "parallax": 0,
+        "yaw": {
+            "default": 0,
+            "min": -100,
+            "max": 100
+        },
+        "pitch": {
+            "default": 0,
+            "min": -90,
+            "max": 180
+        },
+        "roll": {
+            "default": 10,
+            "min": 0,
+            "max": 0
+        },
+        "fov": {
+            "default": 60,
+            "min": 0,
+            "max": 110
+        }
+    },
+    "story": {
+        "scenes": [
+            {
+                "uid": "scene-0",
+                "name": "My first scene",
+                "slug": "my-first-scene",
+                "description": "This is my first scene",
+
+                "media": {
+                    "uid": "media-0",
+                    "type": "image",
+
+                    "source": {
+                        "format": "equi",
+                        "url": "assets/lobbyOutside.jpg"
+                    }
+                },
+                "hotspots": [{
+                    "uid": "hotspotNavigate-dom-one",
+                    "interactive": true,
+                    "type": "dom",
+                    "dom": {
+                        "id": "hotspot-navigation-one",
+                        "width": "0px",
+                        "height": "0px",
+                        "color": "transparent",
+                        "index": 1,
+                        "class": []
+                    },
+                    "transform": {
+                        "position": {
+                            "radius": 180,
+                            "theta": 3,
+                            "phi": -5
+                        },
+                        "rotation": {
+                            "x": 25,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "scale": {
+                            "x": 2,
+                            "y": 2,
+                            "z": 2
+                        }
+                    },
+                    "events": {
+                        "onClick": ["action-loadscene-1", "action-camera-1"]
+                    }
+                }]
+            },
+            {
+                "uid": "scene-1",
+                "name": "My second scene",
+                "slug": "my-second-scene",
+                "description": "This is my second scene",
+
+                "media": {
+                    "uid": "media-1",
+                    "type": "image",
+
+                    "source": {
+                        "format": "equi",
+                        "url": "assets/lobbyEntrance.jpg"
+                    }
+                },
+                "camera": {
+                    "parallax": 0,
+                    "yaw": {
+                        "default": 6,
+                        "min": -100,
+                        "max": 100
+                    },
+                    "pitch": {
+                        "default": 0,
+                        "min": -90,
+                        "max": 180
+                    },
+                    "roll": {
+                        "default": 10,
+                        "min": 0,
+                        "max": 0
+                    },
+                    "fov": {
+                        "default": 80,
+                        "min": 0,
+                        "max": 110
+                    }
+                },
+                "hotspots": [{
+                    "uid": "hotspotNavigate-dom-two",
+                    "interactive": true,
+                    "type": "dom",
+                    "dom": {
+                        "id": "hotspot-navigation-two",
+                        "width": "0px",
+                        "height": "0px",
+                        "color": "transparent",
+                        "index": 1,
+                        "class": []
+                    },
+                        "transform": {
+                            "position": {
+                                "radius": 250,
+                                "theta": 50,
+                                "phi": 5
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 2,
+                                "y": 2,
+                                "z": 2
+                            }
+                        },
+                        "events": {
+                            "onClick": ["action-loadscene-2","remove-hotspots"]
+                        }
+                    },
+                    {
+                        "uid": "hotspotNavigate-dom-three",
+                        "interactive": true,
+                        "type": "dom",
+                        "dom": {
+                            "id": "hotspot-navigation-three",
+                            "width": "0px",
+                            "height": "0px",
+                            "color": "transparent",
+                            "index": 1,
+                            "class": []
+                        },
+                        "transform": {
+                            "position": {
+                                "radius": 180,
+                                "theta": 100,
+                                "phi": 0
+                            },
+                            "rotation": {
+                                "x": 25,
+                                "y": -90,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 2,
+                                "y": 2,
+                                "z": 2
+                            }
+                        },
+                        "events": {
+                            "onClick": ["action-loadscene-3","remove-hotspots"]
+                        }
+                    },
+                    {
+                        "uid": "hotspot-dom-one",
+                        "interactive": true,
+                        "type": "dom",
+
+                        "dom": {
+                            "id": "hotspot-one",
+                            "width": "0px",
+                            "height": "0px",
+                            "color": "transparent",
+                            "index": 1,
+                            "class": []
+                        },
+
+                        "transform": {
+                            "position": {
+                                "x": 25,
+                                "y": 25
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "uid": "scene-2",
+                "name": "My third scene",
+                "slug": "my-third-scene",
+                "description": "This is my third scene",
+
+                "media": {
+                    "uid": "media-2",
+                    "type": "image",
+
+                    "source": {
+                        "format": "equi",
+                        "url": "assets/lobbyElevator.jpg"
+                    }
+                },
+                "camera": {
+                    "parallax": 0,
+                    "yaw": {
+                        "default": 10,
+                        "min": -100,
+                        "max": 100
+                    },
+                    "pitch": {
+                        "default": 0,
+                        "min": -90,
+                        "max": 180
+                    },
+                    "roll": {
+                        "default": 0,
+                        "min": 0,
+                        "max": 0
+                    },
+                    "fov": {
+                        "default": 90,
+                        "min": 0,
+                        "max": 110
+                    }
+                },
+                "hotspots": [{
+                    "uid": "hotspotNavigate-dom-four",
+                    "interactive": true,
+                    "type": "dom",
+                    "dom": {
+                        "id": "hotspot-navigation-four",
+                        "width": "0px",
+                        "height": "0px",
+                        "color": "transparent",
+                        "index": 1,
+                        "class": []
+                    },
+                        "transform": {
+                            "position": {
+                                "radius": 90,
+                                "theta": 5,
+                                "phi": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 2,
+                                "y": 2,
+                                "z": 2
+                            }
+                        },
+                        "events": {
+                            "onClick": ["action-loadscene-4"]
+                        }
+                    },
+                    {
+                        "uid": "hotspotNavigate-dom-five",
+                        "interactive": true,
+                        "type": "dom",
+                        "dom": {
+                            "id": "hotspot-navigation-one",
+                            "width": "0px",
+                            "height": "0px",
+                            "color": "transparent",
+                            "index": 1,
+                            "class": []
+                        },
+                        "transform": {
+                            "position": {
+                                "radius": 150,
+                                "theta": -90,
+                                "phi": 0
+                            },
+                            "rotation": {
+                                "x": 120,
+                                "y": -90,
+                                "z": 180
+                            },
+                            "scale": {
+                                "x": 2,
+                                "y": 2,
+                                "z": 2
+                            }
+                        },
+                        "events": {
+                            "onClick": ["action-loadscene-1"]
+                        }
+                    }
+
+                ]
+            },
+            {
+                "uid": "scene-3",
+                "name": "My four scene",
+                "slug": "my-four-scene",
+                "description": "This is my four scene",
+
+                "media": {
+                    "uid": "media-3",
+                    "type": "image",
+
+                    "source": {
+                        "format": "equi",
+                        "url": "assets/lobbyTrophies.jpg"
+                    }
+                },
+                "camera": {
+                    "parallax": 0,
+                    "yaw": {
+                        "default": 7,
+                        "min": -200,
+                        "max": 200
+                    },
+                    "pitch": {
+                        "default": 0,
+                        "min": -90,
+                        "max": 180
+                    },
+                    "roll": {
+                        "default": 0,
+                        "min": 0,
+                        "max": 0
+                    },
+                    "fov": {
+                        "default": 110,
+                        "min": 0,
+                        "max": 200
+                    }
+                },
+                "hotspots": [{
+                    "uid": "hotspotNavigate-dom-six",
+                    "interactive": true,
+                    "type": "dom",
+                    "dom": {
+                        "id": "hotspot-navigation-two",
+                        "width": "0px",
+                        "height": "0px",
+                        "color": "transparent",
+                        "index": 1,
+                        "class": []
+                    },
+                        "transform": {
+                            "position": {
+                                "radius": 200,
+                                "theta": -155,
+                                "phi": 5
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 180,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 2,
+                                "y": 2,
+                                "z": 2
+                            }
+                        },
+                        "events": {
+                            "onClick": ["action-loadscene-2"]
+                        }
+                    },
+                    {
+                        "uid": "hotspotNavigate-dom-seven",
+                        "interactive": true,
+                        "type": "dom",
+                        "dom": {
+                            "id": "hotspot-navigation-one",
+                            "width": "0px",
+                            "height": "0px",
+                            "color": "transparent",
+                            "index": 1,
+                            "class": []
+                        },
+                        "transform": {
+                            "position": {
+                                "radius": 100,
+                                "theta": -180,
+                                "phi": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 180,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 2,
+                                "y": 2,
+                                "z": 2
+                            }
+                        },
+                        "events": {
+                            "onClick": ["action-loadscene-1"]
+                        }
+                    }, {
+                        "uid": "hotspot-dom-two",
+                        "interactive": true,
+                        "type": "dom",
+
+                        "dom": {
+                            "id": "hotspot-two",
+                            "width": "0px",
+                            "height":"0px",
+                            "color": "none",
+                            "index": 2,
+                            "class": []
+                        },
+
+                        "transform": {
+                            "position": {
+                                "x": 30,
+                                "y": 60
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "uid": "scene-4",
+                "name": "My fourth scene",
+                "slug": "my-fourth-scene",
+                "description": "This is my fourth scene",
+
+                "media": {
+                    "uid": "media-4",
+                    "type": "image",
+
+                    "source": {
+                        "format": "equi",
+                        "url": "assets/sixFloor.jpg"
+                    }
+                },
+                "camera": {
+                    "parallax": 0,
+                    "yaw": {
+                        "default": 7,
+                        "min": -200,
+                        "max": 200
+                    },
+                    "pitch": {
+                        "default": 0,
+                        "min": -90,
+                        "max": 180
+                    },
+                    "roll": {
+                        "default": 0,
+                        "min": 0,
+                        "max": 0
+                    },
+                    "fov": {
+                        "default": 90,
+                        "min": 0,
+                        "max": 110
+                    }
+                },
+                "hotspots": [{
+                    "uid": "hotspotNavigate-dom-eight",
+                    "interactive": true,
+                    "type": "dom",
+                    "dom": {
+                        "id": "hotspot-navigation-five",
+                        "width": "0px",
+                        "height": "0px",
+                        "color": "transparent",
+                        "index": 1,
+                        "class": []
+                    },
+                        "transform": {
+                            "position": {
+                                "radius": 200,
+                                "theta": 0,
+                                "phi": -5
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 2,
+                                "y": 2,
+                                "z": 2
+                            }
+                        },
+                        "events": {
+                            "onClick": ["action-loadscene-5", "action-loadscene-6"]
+                        }
+                    },
+                    {
+                        "uid": "hotspotNavigate-dom-nine",
+                        "interactive": true,
+                        "type": "dom",
+                        "dom": {
+                            "id": "hotspot-navigation-one",
+                            "width": "0px",
+                            "height": "0px",
+                            "color": "transparent",
+                            "index": 1,
+                            "class": []
+                        },
+                        "transform": {
+                            "position": {
+                                "radius": 105,
+                                "theta": 170,
+                                "phi": -10
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": -180,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 2,
+                                "y": 2,
+                                "z": 2
+                            }
+                        },
+                        "events": {
+                            "onClick": ["action-loadscene-1"]
+                        }
+                    }
+                ]
+            },
+            {
+                "uid": "scene-5",
+                "name": "My fifth scene",
+                "slug": "my-fifth-scene",
+                "description": "This is my fifth scene",
+
+                "media": {
+                    "uid": "media-5",
+                    "type": "image",
+
+                    "source": {
+                        "format": "equi",
+                        "url": "assets/makerLab.jpg"
+                    }
+                },
+                "camera": {
+                    "parallax": 0,
+                    "yaw": {
+                        "default": 7,
+                        "min": -200,
+                        "max": 200
+                    },
+                    "pitch": {
+                        "default": 0,
+                        "min": -90,
+                        "max": 180
+                    },
+                    "roll": {
+                        "default": 0,
+                        "min": 0,
+                        "max": 0
+                    },
+                    "fov": {
+                        "default": 100,
+                        "min": 0,
+                        "max": 110
+                    }
+                },
+                "hotspots": [{
+                        "uid": "hotspotNavigate-dom-ten",
+                        "interactive": true,
+                        "type": "dom",
+                        "dom": {
+                            "id": "hotspot-navigation-one",
+                            "width": "0px",
+                            "height": "0px",
+                            "color": "transparent",
+                            "index": 1,
+                            "class": []
+                        },
+                        "transform": {
+                            "position": {
+                                "radius": 200,
+                                "theta": -105,
+                                "phi": -5
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 90,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 2,
+                                "y": 2,
+                                "z": 2
+                            }
+                        },
+                        "events": {
+                            "onClick": ["action-loadscene-1"]
+                        }
+                    },
+                    {
+                        "uid": "hotspotNavigate-dom-eleven",
+                        "interactive": true,
+                        "type": "dom",
+                        "dom": {
+                            "id": "hotspot-navigation-one",
+                            "width": "0px",
+                            "height": "0px",
+                            "color": "transparent",
+                            "index": 1,
+                            "class": []
+                        },
+                        "transform": {
+                            "position": {
+                                "radius": 210,
+                                "theta": 117,
+                                "phi": -5
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": -90,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 2,
+                                "y": 2,
+                                "z": 2
+                            }
+                        },
+                        "events": {
+                            "onClick": ["action-loadscene-1"]
+                        }
+                    }, 
+                    {
+                        "uid": "hotspot-11",
+                        "interactive": true,
+                        "type": "dom",
+                        "dom": {
+                            "id": "hotspot-three",
+                            "width": "0px",
+                            "height":"0px",
+                            "color": "none",
+                            "index": 2,
+                            "class": []
+                        },
+
+                        "transform": {
+                            "position": {
+                                "x": -200,
+                                "y": 200,
+                                "z": 2000
+                            }
+                        }
+                    },
+                    {
+                        "uid": "hotspot-12",
+                        "interactive": true,
+                        "type": "dom",
+                        "dom": {
+                            "id": "hotspot-four",
+                            "width": "0px",
+                            "height":"0px",
+                            "color": "none",
+                            "index": 2,
+                            "class": []
+                        },
+
+                        "transform": {
+                            "position": {
+                                "x": -1150,
+                                "y": 350,
+                                "z": -500
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    
+    "actions": [
+        {
+            "uid": "action-loadscene-0",
+            "target": "viewer.story",
+
+            "method": {
+                "name": "loadScene",
+                "args": ["scene-0"]
+            }
+        },
+        {
+            "uid": "action-loadscene-1",
+            "target": "viewer.story",
+
+            "method": {
+                "name": "loadScene",
+                "args": ["scene-1"]
+            }
+        },
+        {
+            "uid": "action-loadscene-2",
+            "target": "viewer.story",
+
+            "method": {
+                "name": "loadScene",
+                "args": ["scene-2"]
+            }
+        },
+        {
+            "uid": "action-loadscene-3",
+            "target": "viewer.story",
+
+            "method": {
+                "name": "loadScene",
+                "args": ["scene-3"]
+            }
+        },
+        {
+            "uid": "action-loadscene-4",
+            "target": "viewer.story",
+
+            "method": {
+                "name": "loadScene",
+                "args": ["scene-4"]
+            }
+        },
+        {
+            "uid": "action-loadscene-5",
+            "target": "viewer.story",
+
+            "method": {
+                "name": "loadScene",
+                "args": ["scene-5"]
+            }
+        },
+        {
+            "uid": "remove-hotspots",
+            "target": "viewer.hotspots",
+
+            "method": {
+                "name": "remove",
+                "args": [""]
+            }
+        }
+        
+    ]
+    
+}
