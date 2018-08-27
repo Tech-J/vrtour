@@ -44,6 +44,7 @@ function play(playBtn, closeBtn, container) {
         container.classList.remove('noDisplay');
         closeBtn.classList.remove('noDisplay');
         container.classList.add('display');
+        closeBtn.classList.add('animateDisplay');
         playBtn.classList.add('noDisplay');
         container.parentElement.classList.add("animateDisplay");
     })
