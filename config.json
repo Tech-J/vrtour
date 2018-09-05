@@ -319,7 +319,7 @@
 
                     "source": {
                         "format": "equi",
-                        "url": "assets/lobbyTrophies.jpg"
+                        "url": "http://res.cloudinary.com/lamaj/image/upload/v1535373262/VR%20Tour/lobbyTrophies.jpg"
                     }
                 },
                 "camera": {
