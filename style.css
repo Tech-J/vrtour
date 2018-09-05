@@ -305,6 +305,16 @@ body {
     }
 }
 
+.label {
+    background-color: rgba(237, 242, 245, 0.75);
+    border-radius: 5%;
+    color:white;
+    width: 13vw;
+    text-align: center;
+    font-size: 25px;
+    cursor: default !important;
+}
+
 @media only screen and (max-width: 420px){
     
     #newbtn {

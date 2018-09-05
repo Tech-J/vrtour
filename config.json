@@ -36,7 +36,7 @@
 
                     "source": {
                         "format": "equi",
-                        "url": "assets/lobbyOutside.jpg"
+                        "url": "http://res.cloudinary.com/lamaj/image/upload/v1535373262/VR%20Tour/lobbyOutside.jpg"
                     }
                 },
                 "hotspots": [{
@@ -85,7 +85,7 @@
 
                     "source": {
                         "format": "equi",
-                        "url": "assets/lobbyEntrance.jpg"
+                        "url": "http://res.cloudinary.com/lamaj/image/upload/v1535373262/VR%20Tour/lobbyEntrance.jpg"
                     }
                 },
                 "camera": {
@@ -212,7 +212,7 @@
 
                     "source": {
                         "format": "equi",
-                        "url": "assets/lobbyElevator.jpg"
+                        "url": "http://res.cloudinary.com/lamaj/image/upload/v1535373262/VR%20Tour/lobbyElevator.jpg"
                     }
                 },
                 "camera": {
@@ -445,7 +445,7 @@
 
                     "source": {
                         "format": "equi",
-                        "url": "assets/sixFloor.jpg"
+                        "url": "https://res.cloudinary.com/lamaj/image/upload/v1535373263/VR%20Tour/sixFloor.jpg"
                     }
                 },
                 "camera": {
@@ -551,7 +551,7 @@
 
                     "source": {
                         "format": "equi",
-                        "url": "assets/makerLab.jpg"
+                        "url": "https://res.cloudinary.com/lamaj/image/upload/v1535373263/VR%20Tour/makerLab.jpg"
                     }
                 },
                 "camera": {
@@ -682,6 +682,27 @@
                                 "x": -1150,
                                 "y": 350,
                                 "z": -500
+                            }
+                        }
+                    },
+                    {
+                        "uid": "hotspot-13",
+                        "interactive": true,
+                        "type": "dom",
+                        "dom": {
+                            "id": "hotspot-five",
+                            "width": "0px",
+                            "height":"0px",
+                            "color": "none",
+                            "index": 2,
+                            "class": []
+                        },
+
+                        "transform": {
+                            "position": {
+                                "x": -700,
+                                "y": 50,
+                                "z": 500
                             }
                         }
                     }
