@@ -23,7 +23,7 @@ function checkHotspot(){
         uid.forEach((eachHspot)=>{ 
             eachHspot.dom.style.display = "block";
         })
-    },500)
+    },1000)
 }
 
 
@@ -74,6 +74,6 @@ function stopVideo(elem){
 
 function homeButton(){
     var btn = document.getElementById('newbtn');
-    btn.addEventListener('click', elem => window.location = "http://167.99.152.108/")
+    btn.addEventListener('click', elem => window.location = "http://ecscs.tech/")
 }
 homeButton()

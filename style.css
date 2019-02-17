@@ -187,18 +187,18 @@ body {
 
 #newbtn {
     position: absolute;
-    font-size:50px;
+    font-size:25px;
     color:white;
-    height: 100px!important;
-    width: 250px!important;
+    height: 75px!important;
+    width: 100px!important;
     background: rgb(41, 50, 131) !important;
     text-align: center;
     border: 3px solid black;
     z-index: 5;
     border-radius: 5%;
-    animation: btnAlternate 2s  alternate ease-in-out infinite;
     outline: none;
 }
+#newbtn:hover{animation: btnAlternate 2s  alternate ease-in-out infinite;}
 
 @keyframes btnAlternate{
 
